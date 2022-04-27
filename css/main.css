@@ -25,13 +25,7 @@ body {
 	text-align: center;
 	color: #8ee3f1;
 	font-size: 36px;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+	user-select: none;
 }
 
 .alert {
@@ -39,13 +33,7 @@ body {
 	margin-top: 18%;
 	color: #8ee3f1;
 	font-size: 24px;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+	user-select: none;
 }
 
 .header__wrapper {
@@ -58,6 +46,10 @@ body {
 	left: 0;
 	z-index: 10;
 	background: #041b37;
+}
+
+.header__wrapper--transparent {
+	background: transparent;
 }
 
 .header__bar {
@@ -102,13 +94,7 @@ body {
 	cursor: default;
 	font-size: 20px;
 	overflow: hidden;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+	user-select: none;
 }
 
 #grid div {
@@ -258,8 +244,7 @@ a {
 }
 
 .profile {
-	margin: auto;
-	margin-top: 200px;
+	margin: 250px auto 50px;
 	width: 570px;
 	padding: 0 20px;
 	max-width: 100%;

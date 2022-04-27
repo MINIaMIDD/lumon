@@ -2,32 +2,6 @@ const AUDIO_SOURCES = ["audio/consent.mp3", "audio/evidence.mp3", "audio/breakro
 const audioEl = new Audio();
 let currentAudioIndex = null;
 
-// const isPlayingArr = Array(AUDIOARRAY.length).fill(false);
-
-// const audioArr = [0, 1, 2, 3].map((index'') => new Audio(AUDIOARRAY[index]));
-
-// function playAudio(index) {
-// 	if (isPlayingArr[index]) {
-// 		audioArr[index].pause();
-
-// 		isPlayingArr[index] = false;
-// 	} else {
-// 		const playingAudio = audioArr.find((e, i) => isPlayingArr[i]);
-
-// 		if (playingAudio != null) {
-// 			playingAudio.pause();
-
-// 			isPlayingArr[audioArr.indexOf(playingAudio)] = false;
-// 		}
-
-// 		audioArr[index].currentTime = 0;
-
-// 		audioArr[index].play();
-
-// 		isPlayingArr[index] = true;
-// 	}
-// }
-
 Array.from(document.querySelectorAll(".file")).forEach((element, index) => {
 	element.addEventListener("click", async () => {
 		if (audioEl.currentSrc.endsWith(AUDIO_SOURCES[index])) {
